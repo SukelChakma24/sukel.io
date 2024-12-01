@@ -54,7 +54,7 @@ body {
   .profile-pic {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 50% !important;
     border: 3px solid #00adb5;
   }
   
@@ -348,6 +348,11 @@ body {
   .hero {
     text-align: center;
     padding: 2rem;
+    display: flex;
+    text-align: center;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 50px;
   }
   
   .hero-image {
@@ -524,4 +529,21 @@ body {
     font-size: 1rem;
     line-height: 1.5;
   }
+
+  .info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
+  @media screen and (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+    }
+    .info-container p{
+        font-size: 11px;
+    }
+    .info-container h2{
+        font-size: 14px;
+    }
+  }
